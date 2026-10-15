@@ -25,3 +25,11 @@ Berikut adalah hasil pengujian fungsionalitas aplikasi pada Tahap 3 (Validasi In
 | **U05a** | Penggabungan jumlah hingga 10 | Menjumlahkan item yang sama di keranjang | Sesuai harapan, terakumulasi | Lulus | `U05a-gabung-jumlah.png` |
 | **U05b** | Batas maksimal total item (10) | Menolak jika total item melebihi 10 | Sesuai harapan, tertahan/error | Lulus | `U05b-batas-10.png` |
 | **U06** | Persistensi sesi (refresh) | Data keranjang tetap aman saat di-refresh | Sesuai harapan, data tidak hilang | Lulus | `U06-sesi-refresh.png` |
+### Laporan Pengujian Tahap 4 (Manajemen Keranjang & Diskon)
+
+| Kode Uji | Skenario Pengujian | Hasil yang Diharapkan | Hasil Aktual | Status | Bukti Screenshot |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **U07a** | Subtotal di bawah ketentuan diskon (< Rp 50.000) | Diskon bernilai Rp 0, total akhir sesuai subtotal | Sesuai harapan, diskon 0 | Lulus | `U07a-tanpa-diskon.png` |
+| **U07b** | Subtotal mencapai/melebihi ketentuan (>= Rp 50.000) | Otomatis memotong diskon Rp 5.000 | Sesuai harapan, diskon terpotong | Lulus | `U07b-dapat-diskon.png` |
+| **U08a** | Klik tombol **Hapus** pada item keranjang | Memunculkan konfirmasi dan menghapus item terpilih | Sesuai harapan, item terhapus | Lulus | `U08a-hapus-item.png` |
+| **U08b** | Klik tombol **Kosongkan Keranjang** | Menghapus seluruh isi keranjang belanja secara total | Sesuai harapan, keranjang kosong | Lulus | `U08b-kosongkan-keranjang.png` |
